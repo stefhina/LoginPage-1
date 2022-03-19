@@ -37,6 +37,48 @@
   font-size: 50px;
   font-family:'Poppins',sans-serif;
     font-size: 1.2rem;
+    
+}
+.paragraph .option{
+  line-height: 32px;
+  overflow: hidden;
+}
+.option li{
+  list-style: none;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide
+{
+  100%
+  {
+    top:-360px
+  }
+  
+}
+.option li span{
+  position: relative;
+  margin: 5px 0;
+}
+.option li span:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  border-left: 2px solid rgb(47, 134, 69);
+  animation: typing 3s steps(10) infinite;
+
+}
+@keyframes typing {
+  40%, 60%
+  {
+    left: calc(100% + 30px);
+  }
+  100%{
+    left:0;
+  }
+  
 }
 
 .App-logo {
