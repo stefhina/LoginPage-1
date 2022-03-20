@@ -10,8 +10,11 @@ function App() {
       <h2>Backend As A Platfrom</h2>
       </div>,
       <div class="paragraph">
-      <p> A Low-code application development
-platform specifically for back-ends based on the technologies Node.js, Express, REST, GraphQL and MongoDB.</p>
+      <div class="text"></div>
+      <ul class="option">
+      <li><span> A Low-code application development
+platform specifically for back-ends based on the technologies Node.js, Express, REST, GraphQL and MongoDB.</span></li>
+      </ul>
       </div>,
 
     <div className="App">
