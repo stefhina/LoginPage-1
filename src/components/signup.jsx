@@ -1,8 +1,6 @@
 import React from 'react'
 import { Grid,Paper, Avatar, TextField, Button, Typography,Link } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
 import google from '../google.svg';
 import github from '../github.svg';
 const Signup=()=>{
@@ -11,7 +9,8 @@ const Signup=()=>{
     const avatarStyle={backgroundColor:'#1bbd7e'}
     const btnstyle={margin:'8px 0'}
     return(
-        
+        <React.Fragment>
+
         <Grid>
             <Paper elevation={10} style={paperStyle}>
                 <Grid align='center'>
@@ -52,8 +51,7 @@ const Signup=()=>{
     }} >
                     
                 </Typography>
-                <Typography > Already have an account ?
-                     <Link href="#" >
+                <Typography > Already have an account? <Link href="/" >
                         Sign In 
                 </Link>
                 </Typography>
@@ -75,12 +73,7 @@ const Signup=()=>{
 
             </Paper>
         </Grid>
-        <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
-      </ul>
+        </React.Fragment>
     )
 }
 

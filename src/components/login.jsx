@@ -95,7 +95,7 @@ const Login = () => {
         </Typography>
         <Typography>
           {' '}
-          Already have an account? <Link href="#">Sign Up</Link>
+          Don't have an account? <Link href="/signup">Sign Up</Link>
         </Typography>
 
         <div>
