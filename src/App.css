@@ -1,65 +1,100 @@
 .App {
   /* text-align: center; */
-  margin-top: 2cm;
+  margin-top: 3cm;
   margin-left: 15cm;
 }
-.main{
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 10%;
+  top: 20%;
   right: 58%;
-  color: rgb(47, 134, 69);
-  font-family:'Poppins',sans-serif;
+  color: #1a875b;
+  font-family: 'Poppins', sans-serif;
   font-size: 50px;
 }
-.side{
+.side {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 32%;
+  top: 39%;
   right: 58%;
   color: rgb(88, 95, 90);
-  font-family:'Poppins',sans-serif;
-
+  font-family: 'Poppins', sans-serif;
 }
-.paragraph{
+.paragraph {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 40%;
+  top: 45%;
   right: 50%;
   left: 20%;
   color: rgb(88, 88, 88);
   font-size: 50px;
-  font-family:'Poppins',sans-serif;
-    font-size: 1.2rem;
-    
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
 }
-.paragraph .option{
+
+.nav .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: #1a875b;
+  font-family: 'Poppins', sans-serif;
+}
+header {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.nav .navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+.nav .navbar ul li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.nav .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 21px 100px;
+  transition: all 0.5s ease;
+}
+.nav .navbar ul li a:hover {
+  background-color: white;
+  color: #1a875b;
+  box-shadow: 0 0 10px wheat;
+}
+.paragraph .option {
   line-height: 32px;
   overflow: hidden;
 }
-.option li{
+.option li {
   list-style: none;
   animation: slide 12s steps(4) infinite;
 }
-@keyframes slide
-{
-  100%
-  {
-    top:-360px
+@keyframes slide {
+  100% {
+    top: -360px;
   }
-  
 }
-.option li span{
+.option li span {
   position: relative;
   margin: 5px 0;
 }
-.option li span:after{
+.option li span:after {
   content: '';
   position: absolute;
   left: 0;
@@ -68,17 +103,15 @@
   background: rgb(255, 255, 255);
   border-left: 2px solid rgb(47, 134, 69);
   animation: typing 3s steps(10) infinite;
-
 }
 @keyframes typing {
-  40%, 60%
-  {
+  40%,
+  60% {
     left: calc(100% + 30px);
   }
-  100%{
-    left:0;
+  100% {
+    left: 0;
   }
-  
 }
 
 .App-logo {
